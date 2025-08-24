@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Hotel from "../../Assets/Projects/Hotel.png";
+import Task from "../../Assets/Projects/Task.png";
+import Budget from "../../Assets/Projects/Budget.png";
+
 
 function Projects() {
   return (
@@ -20,7 +21,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Budget}
               isBlog={false}
               title="House Budget"
               description="Full Stack application for Personal Expnese Tracking. Front-End made with React Back-End on Node.JS and Database wtih AWS"
@@ -30,18 +31,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Hotel}
               isBlog={false}
-              title="Hotel Catalog App"
+              title="Hotel Catalog Application"
               description="Catalog app for near by attractions, for Hotel Santo Tomas. "
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="https://hotelsantotomascatalog.netlify.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={Task}
               isBlog={false}
               title="To Do Application"
               description="To Do Application built with React.js. Features include adding, deleting and updating tasks"
