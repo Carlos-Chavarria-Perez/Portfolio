@@ -5,7 +5,7 @@ import {
   DiReact,
   DiNodejs,
   DiPython,
-  DiMsqlServer 
+  DiMsqlServer,DiAngularSimple
 } from "react-icons/di";
 
 
@@ -23,10 +23,13 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+      <DiAngularSimple />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMsqlServer />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPython />
       </Col>
     </Row>
   );

@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import Hotel from "../../Assets/Projects/Hotel.png";
 import Task from "../../Assets/Projects/Task.png";
 import Budget from "../../Assets/Projects/Budget.png";
-
+import Scheduler from "../../Assets/Projects/Scheduler.png";
 
 function Projects() {
   return (
@@ -22,9 +22,8 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Budget}
-              isBlog={false}
               title="House Budget"
-              description="Full Stack application for Personal Expnese Tracking. Front-End made with React Back-End on Node.JS and Database wtih AWS"
+              description="A full-stack application for personal expense tracking. Built with React on the front end, Node.js on the back end, and AWS for database hosting."
               demoLink="https://housebudgetapplication.netlify.app/"
             />
           </Col>
@@ -32,21 +31,26 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Hotel}
-              isBlog={false}
               title="Hotel Catalog Application"
-              description="Catalog app for near by attractions, for Hotel Santo Tomas. "
+              description="An interactive catalog app developed for Hotel Santo Tomas. Helps guests get oriented with nearby attractions, amenities, banks, and other essential information during their stay."
               demoLink="https://hotelsantotomascatalog.netlify.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Scheduler}
+              title="Scheduler Application"
+              description="A staff scheduling app designed for hotels. Built with React and integrated with Firebase to store and manage personnel shifts efficiently."
+              demoLink="https://schedules-af574.web.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Task}
-              isBlog={false}
-              title="To Do Application"
-              description="To Do Application built with React.js. Features include adding, deleting and updating tasks"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://todoapplicationwithlocalstorage.netlify.app"              
+              title="To-Do Application"
+              description="A task management app built with Angular. Currently optimized for desktop, with mobile responsiveness in progress. Features include adding, deleting, and updating tasks."
+              demoLink="https://todoapplicationwithlocalstorage.netlify.app"
             />
           </Col>
         </Row>
